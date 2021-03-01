@@ -3,7 +3,7 @@ import HomeNavbar from './HomeNavbar.js'
 import axios from 'axios';
 import './AllBeers.css'
 
-function SingleBeer(props) {
+function RNGBeer(props) {
 
     let id = props.match.params._id
     const [selectedBeer, setSelectedBeer] = useState({});
@@ -30,4 +30,4 @@ function SingleBeer(props) {
     )
 }
 
-export default SingleBeer;
+export default RNGBeer;

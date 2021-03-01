@@ -6,7 +6,7 @@ function HomeNavbar() {
     
     return (
         <div>
-            <Link to='./'>
+            <Link to='../'>
                 <div  id="navHomeButon">
                 </div>
             </Link>

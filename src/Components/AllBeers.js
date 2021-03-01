@@ -6,7 +6,6 @@ import HomeNavbar from './HomeNavbar.js'
 
 function AllBeers() {
     const [beers, setBeers] = useState(['']);
-    let [beerId, setBeerId] = useState('');
 
     useEffect(() => {
         axios.get('https://ih-beers-api2.herokuapp.com/beers')
@@ -14,7 +13,6 @@ function AllBeers() {
                 setBeers(res.data);
             });
     },[]);
-    
 
     return (
         <div>
@@ -22,8 +20,8 @@ function AllBeers() {
             
             {beers.map((allDrinks) => (
                         <div>
-                            <Link props={beers}  to={`/SingleBeer/${allDrinks._id}`} >
-                                <img id="beerPictures" src={allDrinks.image_url} alt="A Beer Pic" onClick={() => {setBeerId(allDrinks._id)}}></img>
+                            <Link to={`/SingleBeer/${allDrinks._id}`} >
+                                <img id="beerPictures" src={allDrinks.image_url} alt="A Beer Pic"></img>
                                 <h3>{allDrinks.name}</h3>
                                 <h3>{allDrinks.tagline}</h3>
                                 <h3>{allDrinks.contributed_by}</h3>
