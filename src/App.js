@@ -3,6 +3,7 @@ import {BrowserRouter as Router ,Route, Switch} from 'react-router-dom';
 import './App.css';
 import Home from './Components/Home.js'
 import AllBeers from './Components/AllBeers.js'
+import SingleBeer from './Components/SingleBeer.js'
 
 function App() {
   //useState Variables
@@ -17,6 +18,7 @@ function App() {
           <Route exact path="/" component={Home} />
 
           <Route exact path="/AllBeers" component={AllBeers} />
+          <Route exact path="/SingleBeer/:_id" component={SingleBeer} />
         </Switch>
       </Router>
     </div>
