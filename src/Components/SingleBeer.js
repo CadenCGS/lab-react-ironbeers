@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import HomeNavbar from './HomeNavbar.js'
 import axios from 'axios';
-import './AllBeers.css'
+import './SingleBeer.css'
 
 function SingleBeer(props) {
 
@@ -19,13 +19,13 @@ function SingleBeer(props) {
     return (
         <div>
             <HomeNavbar />
-            <img id="beerPictures" src={selectedBeer.image_url} alt="A Beer Pic"></img>
-            <h3>{selectedBeer.name}</h3>
-            <h3>{selectedBeer.tagline}</h3>
-            <h3>{selectedBeer.first_brewed}</h3>
-            <h3>{selectedBeer.attenuation_level}</h3>
-            <h3>{selectedBeer.description}</h3>
-            <h3>{selectedBeer.contributed_by}</h3>
+            <img id="beerPicture"src={selectedBeer.image_url} alt="A Beer Pic"></img>
+            <h1>{selectedBeer.name}</h1>
+            <p><strong>Tagline: </strong>{selectedBeer.tagline}</p>
+            <p><strong>First Brewed: </strong>{selectedBeer.first_brewed}</p>
+            <p><strong>Attenuation Level: </strong>{selectedBeer.attenuation_level}</p>
+            <p id="desc"><strong>Description: </strong>{selectedBeer.description}</p>
+            <p><strong>Contributed By: </strong>{selectedBeer.contributed_by}</p>
         </div>
     )
 }

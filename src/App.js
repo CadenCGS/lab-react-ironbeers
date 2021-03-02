@@ -5,6 +5,7 @@ import Home from './Components/Home.js'
 import AllBeers from './Components/AllBeers.js'
 import SingleBeer from './Components/SingleBeer.js'
 import RNGBeer from './Components/RNGBeer.js'
+import NewBeer from './Components/NewBeer.js'
 
 function App() {
   //useState Variables
@@ -21,6 +22,7 @@ function App() {
           <Route exact path="/AllBeers" component={AllBeers} />
           <Route exact path="/SingleBeer/:_id" component={SingleBeer} />
           <Route exact path="/RNGBeer/:_id" component={RNGBeer} />
+          <Route exact path="/NewBeer/" component={NewBeer} />
         </Switch>
       </Router>
     </div>

@@ -1,0 +1,17 @@
+.infop {
+    max-width: 30vw;
+    margin: auto;
+    margin-top: -45px;
+}
+
+h1 {
+    margin-top: -15px;
+}
+
+.splitter {
+    width: 60vw;
+    height: 1vw;
+    border-bottom: 2px solid black;
+    margin: auto;
+    margin-bottom: 50px;
+}

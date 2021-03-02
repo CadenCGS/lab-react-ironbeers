@@ -1,3 +1,19 @@
 #beerPictures {
-    height: 150px;
+    height: 115px;
+    float: left;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+#beerShow {
+    border-top: 2px solid black;
+    margin-bottom: 15px;
+    margin: auto;
+    width: 35vw;
+    height: 8vw;
+    color: Black;
+}
+
+#search {
+    margin-bottom: 25px;
 }
